@@ -5,7 +5,6 @@ export function counter(state = null, action) {
   switch (action.type) {
     case ADD_COUNT:
       return state+1;
-
     default:
       return 10;
   }
@@ -29,7 +28,6 @@ export function addCountAsync() {
 export function addCountAsync2() {
   return handle=>{
     setTimeout(()=>{
-     
       handle([{ type: ADD_COUNT },{ type: ADD_COUNT }])
     },1000)
   }

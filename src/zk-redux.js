@@ -26,7 +26,6 @@ export function applyMiddleWare(...middlewares) {
 
 		return {
 			...store,
-
 			dispatch
 		};
 	};
